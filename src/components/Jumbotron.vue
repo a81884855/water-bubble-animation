@@ -14,6 +14,26 @@
     </div>
     <div class="side-bar">
       <img src="../assets/menu.png" class="menu" />
+      <div class="social-links">
+        <img src="../assets/fb.png" alt />
+        <img src="../assets/ig.png" alt />
+        <img src="../assets/tw.png" alt />
+      </div>
+
+      <div class="useful-links">
+        <img src="../assets/share.png" alt />
+        <img src="../assets/info.png" alt />
+      </div>
+    </div>
+
+    <div class="bubbles">
+      <img src="../assets/bubble.png" alt />
+      <img src="../assets/bubble.png" alt />
+      <img src="../assets/bubble.png" alt />
+      <img src="../assets/bubble.png" alt />
+      <img src="../assets/bubble.png" alt />
+      <img src="../assets/bubble.png" alt />
+      <img src="../assets/bubble.png" alt />
     </div>
   </div>
 </template>
@@ -81,5 +101,97 @@ h1 {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.menu {
+  display: block;
+  width: 30px;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+
+.social-links img,
+.useful-links img {
+  width: 30px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.social-links {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.useful-links {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+}
+
+.bubbles img {
+  width: 50px;
+  animation: bubble 8s linear infinite;
+}
+
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px;
+}
+
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3) {
+  animation-delay: 3s;
+  width: 25px;
+}
+
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+
+.bubbles img:nth-child(6) {
+  width: 20px;
+  animation-delay: 6s;
+}
+
+.bubbles img:nth-child(7) {
+  width: 35px;
+  animation-delay: 7s;
 }
 </style>
